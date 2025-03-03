@@ -11,6 +11,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <240>;
@@ -97,18 +99,6 @@
             key-positions = <28 29>;
         };
 
-        NUMBER {
-            bindings = <&to 1>;
-            key-positions = <3 4>;
-            layers = <0>;
-        };
-
-        DEF {
-            bindings = <&to 0>;
-            key-positions = <14 13>;
-            layers = <1>;
-        };
-
         SWITCH_ON {
             bindings = <&to 0>;
             key-positions = <30 38>;
@@ -138,10 +128,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                   &kp LC(LEFT)        &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp HOME
-&kp N6                      &kp N7        &kp N8        &kp N9        &kp N0                         &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp PG_UP
-&kp PERCENT                 &kp FSLH      &kp ASTERISK  &kp PLUS      &kp EQUAL                      &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN
-&kp LA(LC(LG(LEFT_SHIFT)))                                            &kp LEFT_GUI  &kp DOT  &trans  &trans              &trans              &kp SPACE         &kp INT_YEN          &kp END
+&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp LC(LEFT)        &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp HOME
+&kp N6                      &kp N7        &kp N8        &kp N9        &kp N0                            &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp PG_UP
+&kp PERCENT                 &kp FSLH      &kp ASTERISK  &kp PLUS      &kp EQUAL                         &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN
+&kp LA(LC(LG(LEFT_SHIFT)))                                            &kp LEFT_GUI  &kp DOT  &kp RCTRL  &trans              &kp RIGHT_ALT       &kp RC(PG_UP)     &kp RC(PG_DN)        &kp END
             >;
         };
 
