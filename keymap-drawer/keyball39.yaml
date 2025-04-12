@@ -403,6 +403,8 @@ layers:
 combos:
 - p: [6, 7]
   k: F10
+- p: [1, 0]
+  k: $$mdi:keyboard-tab$$
 - p: [30, 38]
   k: {t: NONE, h: toggle}
   l: [MAC, WIN]
@@ -415,8 +417,6 @@ combos:
 - p: [0, 9]
   k: {t: MAC, h: toggle}
   l: [NONE, WIN]
-- p: [1, 0]
-  k: $$mdi:keyboard-tab$$
 - p: [16, 17]
   k: {t: SHTM, h: toggle}
   l: [MAC]
