@@ -53,8 +53,6 @@
         automouse-layer = <5>;
         scroll-layers = <6>;
         snipe-layers = <7>;
-        invert-x = <1>;
-        invert-y = <1>;
     };
 };
 
