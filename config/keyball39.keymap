@@ -1,10 +1,12 @@
 #define DEFAULT 0
-#define NUM     1
-#define SYM     2
-#define FUN     3
-#define MOUSE   4
-#define SCROLL  5
-#define SNIPE   6
+#define WIN     1
+#define NUM     2
+#define SYM     3
+#define FUN     4
+#define MOUSE   5
+#define SCROLL  6
+#define SNIPE   7
+#define NONE    8
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -28,7 +30,7 @@
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
-    // custom shift using mod-morph 
+    // custom shift using mod-morph
 
     behaviors {
         cmqus: comma_question {
@@ -52,21 +54,6 @@
 
         combos {
         compatible = "zmk,combos";
-
-        CLICK {
-            bindings = <&mkp MB1>;
-            key-positions = <0 1>;
-        };
-
-        RIGHT_CLICK {
-            bindings = <&mkp MB2>;
-            key-positions = <10 11>;
-        };
-
-        MIDDLE_CLICK {
-            bindings = <&mkp MB3>;
-            key-positions = <20 21>;
-        };
 
         ENGLISH_KEY {
             bindings = <&kp F10>;
