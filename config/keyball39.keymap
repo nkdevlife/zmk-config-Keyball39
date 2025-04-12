@@ -1,12 +1,13 @@
 #define DEFAULT 0
-#define WIN     1
-#define NUM     2
-#define SYM     3
-#define FUN     4
-#define MOUSE   5
-#define SCROLL  6
-#define SNIPE   7
-#define NONE    8
+#define SHIFT_M 1
+#define WIN     2
+#define SHIFT_W 3
+#define NUM     4
+#define SYM     5
+#define FUN     6
+#define MOUSE   7
+#define SCROLL  8
+#define NONE    9
 
 #include <behaviors/mouse_keys.dtsi>
 #include <dt-bindings/zmk/mouse.h>
@@ -60,6 +61,11 @@
             key-positions = <6 7>;
         };
 
+        TAB_KEY {
+            bindings = <&kp TAB>;
+            key-positions = <1 0>;
+        };
+
         OFF {
             bindings = <&to 9>;
             key-positions = <30 38>;
@@ -82,11 +88,6 @@
             bindings = <&to 0>;
             key-positions = <0 9>;
             layers = <9 2>;
-        };
-
-        TAB_KEY {
-            bindings = <&kp TAB>;
-            key-positions = <1 0>;
         };
 
         SHIFT_M_ON {

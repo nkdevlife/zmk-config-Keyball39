@@ -12,7 +12,7 @@ if SHIELD_KEYBALL39_LEFT || SHIELD_KEYBALL39_RIGHT
 
 config ZMK_SPLIT
 	default y
-	
+
 endif
 
 if ZMK_DISPLAY
@@ -44,4 +44,4 @@ choice LV_COLOR_DEPTH
     default LV_COLOR_DEPTH_1
 endchoice
 
-endif 
+endif
