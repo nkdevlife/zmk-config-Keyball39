@@ -52,7 +52,7 @@
         };
     };
 
-        combos {
+    combos {
         compatible = "zmk,combos";
 
         ENGLISH_KEY {
@@ -60,40 +60,20 @@
             key-positions = <6 7>;
         };
 
-        TOGGLE_INPUT {
-            bindings = <&kp LA(GRAVE)>;
-            key-positions = <16 17>;
-        };
-
-        CAPSLOCK_KEY {
-            bindings = <&caps_word>;
-            key-positions = <27 26>;
-        };
-
-        BACKSPACE_KEY {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
-        };
-
-        ENTER_KEY {
-            bindings = <&kp ENTER>;
-            key-positions = <18 19>;
-        };
-
         OFF {
-            bindings = <&to 8>;
+            bindings = <&to 9>;
             key-positions = <30 38>;
-            layers = <0 1>;
+            layers = <0 2>;
         };
 
         ON {
             bindings = <&to 0>;
             key-positions = <30 38>;
-            layers = <8 1>;
+            layers = <9 2>;
         };
 
         WINDOWS {
-            bindings = <&to 1>;
+            bindings = <&to 2>;
             key-positions = <0 9>;
             layers = <0>;
         };
@@ -101,40 +81,88 @@
         MAC {
             bindings = <&to 0>;
             key-positions = <0 9>;
-            layers = <8 1>;
+            layers = <9 2>;
+        };
+
+        TAB_KEY {
+            bindings = <&kp TAB>;
+            key-positions = <1 0>;
+        };
+
+        SHIFT_M_ON {
+            bindings = <&to 1>;
+            key-positions = <16 17>;
+            layers = <0>;
+        };
+
+        SHIFT_M_OFF {
+            bindings = <&to 0>;
+            key-positions = <16 17>;
+            layers = <1>;
+        };
+
+        SHIFT_W_ON {
+            bindings = <&to 3>;
+            key-positions = <16 17>;
+            layers = <2>;
+        };
+
+        SHIFT_W_OFF {
+            bindings = <&to 2>;
+            key-positions = <16 17>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
-            label = "QWRT";
+        mac_layer {
+            label = "MAC";
             bindings = <
-&lt 6 Q                            &kp W  &kp E  &kp R  &kp T                                 &kp Y        &kp U           &kp I      &kp O     &kp P
-&lt 4 A                            &kp S  &kp D  &kp F  &kp G                                 &kp H        &kp J           &kp K      &kp L     &lt 4 SEMICOLON
-&mt LEFT_SHIFT Z                   &kp X  &kp C  &kp V  &kp B                                 &kp N        &kp M           &kp COMMA  &kp DOT   &mt LEFT_SHIFT MINUS
-&mt LA(LC(LG(LEFT_SHIFT))) ESCAPE                       &kp LGUI  &lt 3 TAB  &mt LCTRL LANG2  &lt 2 ENTER  &mt RALT LANG1  &kp SPACE  &kp BSPC  &kp DELETE
+&lt 8 Q                            &kp W  &kp E  &kp R  &kp T                                   &kp Y        &kp U           &kp I          &kp O    &kp P
+&lt 6 A                            &kp S  &kp D  &kp F  &kp G                                   &kp H        &kp J           &kp K          &kp L    &lt 6 SEMICOLON
+&mt LEFT_SHIFT Z                   &kp X  &kp C  &kp V  &kp B                                   &kp N        &kp M           &kp COMMA      &kp DOT  &mt LEFT_SHIFT MINUS
+&mt LA(LC(LG(LEFT_SHIFT))) ESCAPE                       &kp LGUI  &lt 5 SPACE  &mt LCTRL LANG2  &lt 4 ENTER  &mt RALT LANG1  &kp BACKSPACE  &kp DEL  &kp LA(GRAVE)
+            >;
+        };
+
+        shiftd_layer {
+            label = "SHTM";
+            bindings = <
+&lt 8 LS(Q)                        &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)                                &kp RS(Y)    &kp RS(U)       &kp RS(I)      &kp RS(O)    &kp RS(P)
+&lt 6 RS(A)                        &kp RS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)                                &kp RS(H)    &kp RS(J)       &kp RS(K)      &kp RS(L)    &lt 6 RS(SEMICOLON)
+&kp RS(Z)                          &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)                                &kp RS(N)    &kp RS(M)       &kp RS(COMMA)  &kp RS(DOT)  &kp RS(MINUS)
+&mt LA(LC(LG(LEFT_SHIFT))) ESCAPE                                   &kp LGUI   &lt 5 SPACE  &mt LCTRL LANG2  &lt 4 ENTER  &mt RALT LANG1  &kp BACKSPACE  &kp DELETE   &kp LA(GRAVE)
             >;
         };
 
         windows_layer {
             label = "WIN";
             bindings = <
-&lt 6 Q           &kp W  &kp E  &kp R  &kp T                           &kp Y        &kp U           &kp I      &kp O     &kp P
-&lt 4 A           &kp S  &kp D  &kp F  &kp G                           &kp H        &kp J           &kp K      &kp L     &lt 4 SEMICOLON
-&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B                           &kp N        &kp M           &kp COMMA  &kp DOT   &mt LEFT_SHIFT MINUS
-&mt LCTRL ESCAPE                       &kp LGUI  &lt 3 TAB  &kp LANG2  &lt 2 ENTER  &mt RALT LANG1  &kp SPACE  &kp BSPC  &kp DELETE
+&lt 8 Q           &kp W  &kp E  &kp R  &kp T                             &kp Y        &kp U           &kp I      &kp O       &kp P
+&lt 6 A           &kp S  &kp D  &kp F  &kp G                             &kp H        &kp J           &kp K      &kp L       &lt 6 SEMICOLON
+&mt LEFT_SHIFT Z  &kp X  &kp C  &kp V  &kp B                             &kp N        &kp M           &kp COMMA  &kp DOT     &mt LEFT_SHIFT MINUS
+&mt LCTRL ESCAPE                       &kp LGUI  &lt 5 SPACE  &kp LANG2  &lt 4 ENTER  &mt RALT LANG1  &kp BSPC   &kp DELETE  &kp LA(GRAVE)
+            >;
+        };
+
+        shiftw_layer {
+            label = "SFTW";
+            bindings = <
+&lt 8 LS(Q)       &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)                                &kp RS(Y)    &kp RS(U)       &kp RS(I)      &kp RS(O)    &kp RS(P)
+&lt 6 RS(A)       &kp RS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)                                &kp RS(H)    &kp RS(J)       &kp RS(K)      &kp RS(L)    &lt 6 RS(SEMICOLON)
+&kp RS(Z)         &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)                                &kp RS(N)    &kp RS(M)       &kp RS(COMMA)  &kp RS(DOT)  &kp RS(MINUS)
+&mt LCTRL ESCAPE                                   &kp LGUI   &lt 5 SPACE  &mt LCTRL LANG2  &lt 4 ENTER  &mt RALT LANG1  &kp BACKSPACE  &kp DEL      &kp LA(GRAVE)
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp LC(LEFT)        &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp HOME
-&kp N6                      &kp N7        &kp N8        &kp N9        &kp N0                            &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp PG_UP
-&kp PERCENT                 &kp FSLH      &kp ASTERISK  &kp PLUS      &kp EQUAL                         &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &kp PAGE_DOWN
-&kp LA(LC(LG(LEFT_SHIFT)))                                            &kp LEFT_GUI  &kp TAB  &kp RCTRL  &trans              &kp RIGHT_ALT       &kp SPACE         &kp DEL              &kp END
+&kp NUMBER_1                &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                        &kp LC(LEFT)        &kp LC(DOWN_ARROW)  &kp LC(UP_ARROW)  &kp LC(RIGHT_ARROW)  &kp HOME
+&kp N6                      &kp N7        &kp N8        &kp N9        &kp N0                              &kp LEFT_ARROW      &kp DOWN_ARROW      &kp UP_ARROW      &kp RIGHT_ARROW      &kp PG_UP
+&mt LEFT_SHIFT PERCENT      &kp FSLH      &kp ASTERISK  &kp PLUS      &kp EQUAL                           &kp LA(LEFT_ARROW)  &kp LA(DOWN_ARROW)  &kp LA(UP_ARROW)  &kp LA(RIGHT_ARROW)  &mt RIGHT_SHIFT PAGE_DOWN
+&kp LA(LC(LG(LEFT_SHIFT)))                                            &kp LEFT_GUI  &kp SPACE  &kp RCTRL  &trans              &kp RIGHT_ALT       &kp RC(PG_UP)     &kp RC(PAGE_DOWN)    &kp END
             >;
         };
 
@@ -161,30 +189,20 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp N1          &kp N2          &kp N3        &kp N4     &kp N5                  &kp N6         &kp N7  &kp N8  &kp N9  &kp N0
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none                   &kp PAGE_UP    &none   &none   &none   &none
-&none           &none           &none         &none      &none                   &kp PAGE_DOWN  &none   &none   &none   &none
-&none                                                    &trans  &trans  &trans  &trans         &trans  &trans  &trans  &none
+&none  &kp LC(PG_UP)  &none      &kp LC(PG_DN)  &none                   &none   &none   &none   &none   &none
+&none  &mkp LCLK      &mkp MCLK  &mkp RCLK      &none                   &none   &none   &none   &none   &none
+&none  &mkp MB4       &none      &mkp MB5       &none                   &none   &none   &none   &none   &none
+&none                                           &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
             >;
         };
 
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-
-        snipe_layer {
-            label = "SNIPE";
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans                          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_LEFT  &mmv MOVE_RIGHT  &trans          &trans                           &trans  &trans  &trans  &trans  &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_UP     &mmv MOVE_DOWN  &mmv MOVE_RIGHT                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans           &trans          &trans                           &trans  &trans  &trans  &trans  &trans
+&trans                                                   &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
