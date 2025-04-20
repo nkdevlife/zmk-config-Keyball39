@@ -27,14 +27,14 @@ layers:
   - {t: V, h: SYM}
   - {t: B, h: SYM}
   - {t: N, h: NUM}
-  - {t: Sft+M, h: NUM}
+  - {t: M, h: NUM}
   - {t: ',', h: NUM, s: <}
   - {t: ., h: NUM}
   - {t: '-', h: FUN, s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', h: FUN}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -67,7 +67,7 @@ layers:
   - {t: V, h: SYM}
   - {t: B, h: SYM}
   - {t: N, h: NUM}
-  - {t: Sft+M, h: NUM}
+  - {t: M, h: NUM}
   - {t: ',', h: NUM, s: <}
   - {t: ., h: NUM}
   - {t: '-', h: FUN, s: _}
@@ -154,8 +154,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '=', s: +}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
