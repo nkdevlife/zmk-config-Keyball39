@@ -20,20 +20,20 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: RIGHT GUI}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: Z, h: 'Alt+Ctl+Gui+$$mdi:apple-keyboard-shift$$'}
   - {t: Ctl+X, h: SYM}
   - {t: C, h: SYM}
   - {t: V, h: SYM}
   - {t: B, h: SYM}
   - {t: N, h: NUM}
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: Sft+M, h: NUM}
+  - {t: ',', h: NUM, s: <}
+  - {t: ., h: NUM}
   - {t: '-', h: FUN, s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -60,20 +60,20 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: RIGHT GUI}
   - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - {t: Ctl+X, h: SYM}
   - {t: C, h: SYM}
   - {t: V, h: SYM}
   - {t: B, h: SYM}
   - {t: N, h: NUM}
-  - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: Sft+M, h: NUM}
+  - {t: ',', h: NUM, s: <}
+  - {t: ., h: NUM}
   - {t: '-', h: FUN, s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', h: FUN}
   - {t: '$$mdi:keyboard-return$$', h: NUM}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -95,7 +95,7 @@ layers:
   - {t: PG UP, h: '$$mdi:apple-keyboard-option$$'}
   - {t: PgDn, h: RIGHT GUI}
   - {t: END, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '0', s: )}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -107,15 +107,15 @@ layers:
   - Ctl+PG UP
   - Ctl+PgDn
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:alpha-w-box$$
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:alpha-w-box$$', type: held alternate}
+  - {t: LANG2, type: held alternate}
+  - {t: LANG1, type: held alternate}
   - {t: AltGr+`, s: AltGr+~}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:backspace-reverse-outline$$', type: held alternate}
+  - $$mdi:keyboard-tab$$
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -153,8 +153,8 @@ layers:
   - _
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ;, s: ':'}
   - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -242,20 +242,20 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SCROLL:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - '&msc MOVE_Y(5)'
-  - '&mmv MOVE_X(100)'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-left$$
-  - $$mdi:pan-up$$
+  - $$mdi:pan-right$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - $$mdi:pan-down$$
   - $$mdi:pan-right$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
@@ -337,23 +337,9 @@ combos:
   k: $$mdi:mouse-left-click-outline$$
 - p: [11, 12]
   k: $$mdi:mouse-right-click-outline$$
-- p: [1, 0]
-  k: $$mdi:keyboard-tab$$
-- p: [20, 21]
-  k: $$mdi:keyboard-esc$$
-- p: [24, 23]
-  k: $$mdi:keyboard-space$$
 - p: [6, 7]
   k: F10
 - p: [16, 17]
   k: LANG2
 - p: [17, 18]
   k: LANG1
-- p: [25, 26]
-  k: $$mdi:alpha-w-box$$
-- p: [9, 8]
-  k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [18, 19]
-  k: {t: ;, s: ':'}
-- p: [28, 29]
-  k: $$mdi:backspace-reverse-outline$$
