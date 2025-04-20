@@ -321,10 +321,6 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [6, 7]
-  k: F10
-- p: [1, 0]
-  k: $$mdi:keyboard-tab$$
 - p: [30, 38]
   k: {t: NONE, h: toggle}
   l: [MAC]
@@ -341,19 +337,23 @@ combos:
   k: $$mdi:mouse-left-click-outline$$
 - p: [11, 12]
   k: $$mdi:mouse-right-click-outline$$
-- p: [9, 8]
-  k: {t: '$$mdi:backspace$$', type: backspace}
-- p: [18, 19]
-  k: {t: ;, s: ':'}
-- p: [28, 29]
-  k: $$mdi:backspace-reverse-outline$$
+- p: [1, 0]
+  k: $$mdi:keyboard-tab$$
+- p: [20, 21]
+  k: $$mdi:keyboard-esc$$
+- p: [24, 23]
+  k: $$mdi:keyboard-space$$
+- p: [6, 7]
+  k: F10
 - p: [16, 17]
   k: LANG2
 - p: [17, 18]
   k: LANG1
 - p: [25, 26]
   k: $$mdi:alpha-w-box$$
-- p: [20, 21]
-  k: $$mdi:keyboard-esc$$
-- p: [24, 23]
-  k: $$mdi:keyboard-space$$
+- p: [9, 8]
+  k: {t: '$$mdi:backspace$$', type: backspace}
+- p: [18, 19]
+  k: {t: ;, s: ':'}
+- p: [28, 29]
+  k: $$mdi:backspace-reverse-outline$$
