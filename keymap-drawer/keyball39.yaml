@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: Z, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - C
@@ -32,11 +32,11 @@ layers:
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
   - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', h: NUM}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - LANG2
   - LANG2
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -60,7 +60,7 @@ layers:
   - J
   - K
   - L
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - C
@@ -72,11 +72,11 @@ layers:
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
   - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-return$$', h: NUM}
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', h: NUM}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
   - LANG2
   - LANG2
   - {t: '$$mdi:minus-circle-outline$$', type: none}
