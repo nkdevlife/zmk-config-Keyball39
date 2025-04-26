@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: Z, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - C
@@ -30,7 +30,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
@@ -60,7 +60,7 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - {t: X, h: '$$mdi:apple-keyboard-option$$'}
   - C
@@ -70,7 +70,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '-', h: '$$mdi:apple-keyboard-control$$', s: _}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-command$$'}
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
@@ -100,17 +100,17 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - LANG2
+  - {t: LANG2, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:keyboard-esc$$', h: 'AltGr+Ctl+Gui+$$mdi:apple-keyboard-shift$$'}
+  - {t: Ctl+PG UP, h: '$$mdi:apple-keyboard-option$$'}
+  - Ctl+PG DN
   - '&mkp MB4'
   - '&mkp MB5'
-  - Ctl+PG UP
-  - Ctl+PgDn
   - HOME
   - PG DN
   - PG UP
-  - END
-  - AltGr+LANG1
+  - {t: END, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: LANG1, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-tab$$', h: FUN}
@@ -140,7 +140,7 @@ layers:
   - )
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - ':'
+  - {t: ;, s: ':'}
   - {t: ;, s: ':'}
   - '|'
   - {t: \, s: '|'}
@@ -153,10 +153,10 @@ layers:
   - _
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '=', h: FUN, s: +}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - AltGr+Y
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -189,17 +189,17 @@ layers:
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:progress-download$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   MOUSE:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+PG UP
