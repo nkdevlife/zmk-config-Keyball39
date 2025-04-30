@@ -20,25 +20,25 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-return$$', h: FUN}
   - {t: Z, h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - C
-  - V
+  - {t: X, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - B
   - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: M, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: LANG1, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: LANG2, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - LANG2
-  - LANG2
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   WIN:
   - {t: Q, h: SCROLL}
@@ -60,25 +60,25 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '$$mdi:keyboard-return$$', h: FUN}
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - C
-  - V
+  - {t: X, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: C, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: V, h: '$$mdi:apple-keyboard-control$$'}
   - B
   - N
-  - M
-  - {t: ',', s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: M, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: LANG1, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: LANG2, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:backspace$$', h: NUM}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - LANG2
-  - LANG2
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   NUM:
   - KP 1
@@ -100,25 +100,25 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: LANG2, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: Alt+`, s: Alt+~}
   - {t: '$$mdi:keyboard-esc$$', h: 'AltGr+Ctl+Gui+$$mdi:apple-keyboard-shift$$'}
-  - {t: Ctl+PG UP, h: '$$mdi:apple-keyboard-option$$'}
-  - Ctl+PG DN
+  - {t: Ctl+PG UP, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: Ctl+PG DN, h: '$$mdi:apple-keyboard-option$$'}
   - '&mkp MB4'
   - '&mkp MB5'
   - HOME
   - PG DN
-  - PG UP
-  - {t: END, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: LANG1, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-tab$$', h: FUN}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: PG UP, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: END, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:backspace-reverse-outline$$
-  - F10
-  - {t: AltGr+`, s: AltGr+~}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-tab$$', h: FUN}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYM:
   - '!'
@@ -141,7 +141,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - ':'
-  - {t: ;, s: ':'}
+  - _
   - '|'
   - {t: \, s: '|'}
   - {t: /, s: '?'}
@@ -150,13 +150,13 @@ layers:
   - '}'
   - <
   - '>'
-  - _
+  - {t: ;, s: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '=', h: FUN, s: +}
   - AltGr+Y
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -180,7 +180,7 @@ layers:
   - '&macmini_2'
   - '&ipad_3'
   - '&windows_4'
-  - '&windows_5'
+  - {t: '&windows_5', type: held}
   - {t: '$$mdi:keyboard-esc$$', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
   - F14
   - F15
@@ -193,18 +193,16 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   MOUSE:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+PG UP
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+PG DN
+  - '&mkp MB1'
+  - '&mkp MB1'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -212,9 +210,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:mouse-right-click-outline$$
-  - $$mdi:mouse-scroll-wheel$$
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mkp MB3'
+  - '&mkp MB3'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -222,9 +220,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB4'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB5'
+  - '&mkp MB2'
+  - '&mkp MB2'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -333,7 +333,9 @@ combos:
 - p: [0, 9]
   k: {t: MAC, h: toggle}
   l: [NONE]
-- p: [13, 12]
+- p: [0, 1]
   k: $$mdi:mouse-left-click-outline$$
-- p: [11, 12]
+- p: [20, 21]
   k: $$mdi:mouse-right-click-outline$$
+- p: [6, 7]
+  k: F10
