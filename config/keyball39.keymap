@@ -151,7 +151,7 @@
 &lt 6 Q                  &kp W             &kp E           &kp R        &kp T                                       &kp Y                  &kp U        &kp I                &kp O                   &kp P
 &kp A                    &kp S             &kp D           &kp F        &kp G                                       &kp H                  &kp J        &kp K                &kp L                   &lt 4 ENTER
 &mt LS(LA(LG(RCTRL))) Z  &mt LEFT_SHIFT X  &mt LEFT_ALT C  &mt LCTRL V  &kp B                                       &kp N                  &mt RCTRL M  &mt RIGHT_ALT COMMA  &mt RIGHT_SHIFT PERIOD  &kp BACKSPACE
-&none                                                                   &mt LEFT_GUI LANG1  &lt 3 TAB  &lt 2 SPACE  &mt RIGHT_SHIFT LANG2  &none        &none                &none                   &none
+&none                                                                   &mt LEFT_GUI LANG2  &lt 3 TAB  &lt 2 SPACE  &mt RIGHT_SHIFT LANG1  &none        &none                &none                   &none
             >;
         };
 
@@ -161,7 +161,7 @@
 &lt 6 Q      &kp W             &kp E           &kp R        &kp T                                       &kp Y                  &kp U        &kp I                &kp O                   &kp P
 &kp A        &kp S             &kp D           &kp F        &kp G                                       &kp H                  &kp J        &kp K                &kp L                   &lt 4 ENTER
 &mt RCTRL Z  &mt LEFT_SHIFT X  &mt LEFT_ALT C  &mt LCTRL V  &kp B                                       &kp N                  &mt RCTRL M  &mt RIGHT_ALT COMMA  &mt RIGHT_SHIFT PERIOD  &kp BACKSPACE
-&none                                                       &mt LEFT_GUI LANG1  &lt 3 TAB  &lt 2 SPACE  &mt RIGHT_SHIFT LANG2  &none        &none                &none                   &none
+&none                                                       &mt LEFT_GUI LANG2  &lt 3 TAB  &lt 2 SPACE  &mt RIGHT_SHIFT LANG1  &none        &none                &none                   &none
             >;
         };
 
