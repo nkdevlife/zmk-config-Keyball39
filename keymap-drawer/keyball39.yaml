@@ -33,8 +33,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: LANG2, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-tab$$', h: NUM}
   - {t: LANG1, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -73,8 +73,8 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: LANG2, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-tab$$', h: NUM}
   - {t: LANG1, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -113,9 +113,9 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-tab$$', h: FUN}
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
