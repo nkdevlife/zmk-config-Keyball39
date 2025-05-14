@@ -30,12 +30,12 @@ layers:
   - M
   - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
   - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
   - {t: '$$mdi:keyboard-esc$$', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-tab$$', h: NUM}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LANG2
   - LANG1
@@ -92,10 +92,10 @@ layers:
   - KP 9
   - KP 0
   - $$mdi:alpha-w-box$$
-  - '&msc MOVE_X(20)'
+  - '&msc MOVE_X(-15)'
   - '&msc MOVE_Y(20)'
   - '&msc MOVE_Y(-20)'
-  - '&msc MOVE_X(-20)'
+  - '&msc MOVE_X(15)'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -110,12 +110,12 @@ layers:
   - PG DN
   - PG UP
   - END
-  - $$mdi:backspace-reverse-outline$$
+  - F10
   - Sft+Alt+Gui+$$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - $$mdi:keyboard-tab$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -129,8 +129,8 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: '-', s: _}
   - +
+  - {t: ;, s: ':'}
   - '?'
   - '~'
   - {t: '`', s: '~'}
@@ -141,7 +141,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - ':'
-  - _
+  - '|'
   - '|'
   - {t: \, s: '|'}
   - {t: /, s: '?'}
@@ -150,7 +150,7 @@ layers:
   - '}'
   - <
   - '>'
-  - {t: ;, s: ':'}
+  - _
   - Sft+Alt+Gui+$$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
