@@ -148,30 +148,30 @@
         mac_layer {
             label = "MAC";
             bindings = <
-&lt 6 Q                    &kp W           &kp E  &kp R  &kp T                                     &kp Y          &kp U  &kp I            &kp O                 &kp P
-&kp A                      &kp S           &kp D  &kp F  &kp G                                     &kp H          &kp J  &kp K            &kp L                 &lt 4 ENTER
-&mt LEFT_SHIFT Z           &mt LEFT_ALT X  &kp C  &kp V  &kp B                                     &kp N          &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT BACKSPACE
-&mt LS(LA(LG(LCTRL))) ESC                                &kp LEFT_COMMAND  &lt 3 SPACE  &lt 2 TAB  &kp BACKSPACE  &none  &kp LANG2        &kp LANG1             &none
+&lt 6 Q                    &kp W           &kp E  &kp R  &kp T                                     &kp Y      &kp U  &kp I            &kp O                 &kp P
+&kp A                      &kp S           &kp D  &kp F  &kp G                                     &kp H      &kp J  &kp K            &kp L                 &lt 4 ENTER
+&mt LEFT_SHIFT Z           &mt LEFT_ALT X  &kp C  &kp V  &kp B                                     &kp N      &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT BACKSPACE
+&mt LS(LA(LG(LCTRL))) ESC                                &kp LEFT_COMMAND  &lt 3 TAB  &lt 2 SPACE  &kp MINUS  &none  &kp LANG2        &kp LANG1             &none
             >;
         };
 
         windows_layer {
             label = "WIN";
             bindings = <
-&lt 6 Q           &kp W           &kp E  &kp R  &kp T                                     &kp Y       &kp U  &kp I            &kp O                 &kp P
-&kp A             &kp S           &kp D  &kp F  &kp G                                     &kp H       &kp J  &kp K            &kp L                 &lt 4 ENTER
-&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &kp C  &kp V  &kp B                                     &kp N       &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &kp BACKSPACE
-&mt LCTRL ESC                                   &kp LEFT_COMMAND  &lt 3 SPACE  &lt 2 TAB  &kp RSHIFT  &none  &kp LANG2        &kp LANG1             &none
+&lt 6 Q           &kp W           &kp E  &kp R  &kp T                                     &kp Y      &kp U  &kp I            &kp O                 &kp P
+&kp A             &kp S           &kp D  &kp F  &kp G                                     &kp H      &kp J  &kp K            &kp L                 &lt 4 ENTER
+&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &kp C  &kp V  &kp B                                     &kp N      &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT BACKSPACE
+&mt LCTRL ESC                                   &kp LEFT_COMMAND  &lt 3 TAB  &lt 2 SPACE  &kp MINUS  &none  &kp LANG2        &kp LANG1             &none
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&kp KP_NUMBER_1        &kp KP_NUMBER_2         &kp KP_NUMBER_3  &kp KP_NUMBER_4   &kp KP_NUMBER_5                      &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&caps_word             &msc MOVE_X(-15)        &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(15)                      &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp LA(GRAVE)
-&kp LSHIFT             &mt LEFT_ALT LC(PG_UP)  &kp LC(PG_DN)    &mkp MB4          &mkp MB5                             &kp HOME         &kp PG_DN        &kp PG_UP        &kp END          &kp DEL
-&kp LS(LA(LG(LCTRL)))                                                             &kp LEFT_GUI     &lt 4 SPACE  &none  &kp DEL          &none            &none            &none            &none
+&kp KP_NUMBER_1        &kp KP_NUMBER_2         &kp KP_NUMBER_3  &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&caps_word             &msc MOVE_X(-15)        &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(15)                    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp LA(GRAVE)
+&kp LSHIFT             &mt LEFT_ALT LC(PG_UP)  &kp LC(PG_DN)    &mkp MB4          &mkp MB5                           &kp HOME         &kp PG_DN        &kp PG_UP        &kp END          &kp DEL
+&kp LS(LA(LG(LCTRL)))                                                             &kp LEFT_GUI     &lt 4 TAB  &none  &kp SPACE        &none            &none            &none            &none
             >;
         };
 
@@ -181,17 +181,17 @@
 &kp EXCLAMATION        &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT                      &kp CARET             &kp AMPERSAND          &kp ASTERISK      &kp MINUS          &kp PLUS
 &kp QUESTION           &kp TILDE    &kp GRAVE  &kp DOUBLE_QUOTES  &kp SQT                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON
 &kp UNDERSCORE         &kp PIPE     &kp BSLH   &kp FSLH           &kp SLASH                        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN     &kp GREATER_THAN   &kp SEMICOLON
-&kp LS(LA(LG(LCTRL)))                                             &kp SPACE    &none  &lt 4 EQUAL  &kp RA(Y)             &none                  &none             &none              &none
+&kp LS(LA(LG(LCTRL)))                                             &kp TAB      &none  &lt 4 EQUAL  &kp RA(Y)             &none                  &none             &none              &none
             >;
         };
 
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1                 &kp F2   &kp F3       &kp F4       &kp F5                       &kp F6      &kp F7      &kp F8   &kp F9      &kp F10
-&kp F11                &kp F12  &kp LC(F13)  &kp LA(F13)  &kp LC(LS(S))                &macbook_1  &macmini_2  &ipad_3  &windows_4  &windows_5
-&kp F20                &kp F14  &kp F15      &kp F16      &kp F17                      &bt BT_CLR  &none       &none    &none       &sys_reset
-&kp LS(LA(LG(LCTRL)))                                     &none          &none  &none  &none       &none       &none    &none       &none
+&kp F1                 &kp F2   &kp F3       &kp F4       &kp F5                       &kp F6      &kp F7      &kp F8      &kp F9       &kp F10
+&kp F11                &kp F12  &kp LC(F13)  &kp LA(F13)  &kp LC(LS(S))                &kp F7      &kp F10     &kp K_COPY  &kp K_PASTE  &none
+&kp F20                &kp F14  &kp F15      &kp F16      &kp F17                      &macbook_1  &macmini_2  &ipad_3     &windows_4   &bt BT_CLR
+&kp LS(LA(LG(LCTRL)))                                     &none          &none  &none  &none       &none       &none       &none        &none
             >;
         };
 
