@@ -180,7 +180,7 @@
             bindings = <
 &kp EXCLAMATION        &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT                      &kp CARET             &kp AMPERSAND          &kp ASTERISK      &kp MINUS          &kp PLUS
 &kp QUESTION           &kp TILDE    &kp GRAVE  &kp DOUBLE_QUOTES  &kp SQT                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON
-&kp UNDERSCORE         &kp PIPE     &kp BSLH   &kp FSLH           &kp SLASH                        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN     &kp GREATER_THAN   &kp SEMICOLON
+&kp SEMICOLON          &kp PIPE     &kp BSLH   &kp FSLH           &kp SLASH                        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN     &kp GREATER_THAN   &kp UNDERSCORE
 &kp LS(LA(LG(LCTRL)))                                             &kp TAB      &none  &lt 4 EQUAL  &kp DEL               &none                  &none             &none              &none
             >;
         };
