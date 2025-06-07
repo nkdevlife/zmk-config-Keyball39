@@ -141,7 +141,7 @@ layers:
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - ':'
-  - _
+  - {t: ;, s: ':'}
   - '|'
   - {t: \, s: '|'}
   - {t: /, s: '?'}
@@ -150,7 +150,7 @@ layers:
   - '}'
   - <
   - '>'
-  - {t: ;, s: ':'}
+  - _
   - Sft+Alt+Gui+$$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-tab$$
   - {t: '$$mdi:minus-circle-outline$$', type: held}
