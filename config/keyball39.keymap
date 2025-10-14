@@ -61,7 +61,7 @@
         compatible = "zmk,combos";
 
         OFF {
-            bindings = <&to 7>;
+            bindings = <&to 0>;
             key-positions = <30 38>;
             layers = <0>;
         };
@@ -69,19 +69,6 @@
         ON {
             bindings = <&to 0>;
             key-positions = <30 38>;
-            layers = <7>;
-        };
-
-        WINDOWS {
-            bindings = <&to 0>;
-            key-positions = <0 9>;
-            layers = <0>;
-        };
-
-        MAC {
-            bindings = <&to 0>;
-            key-positions = <0 9>;
-            layers = <7>;
         };
 
         LEFT_CLICK {
@@ -91,7 +78,7 @@
 
         RIGHT_CLICK {
             bindings = <&mkp RCLK>;
-            key-positions = <20 21>;
+            key-positions = <10 11>;
         };
 
         ENGLISH_KEY {
@@ -128,7 +115,7 @@
         windows_4: windows_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&to 0>, <&macro_wait_time 300>, <&bt BT_SEL 3>;
+            bindings = <&to 3>, <&macro_wait_time 300>, <&bt BT_SEL 3>;
 
             label = "WINDOWS_4";
         };
@@ -148,50 +135,50 @@
         mac_layer {
             label = "MAC";
             bindings = <
-&lt 6 Q                    &kp W           &kp E  &kp R  &kp T                                     &kp Y          &kp U  &kp I            &kp O                 &kp P
-&kp A                      &kp S           &kp D  &kp F  &kp G                                     &kp H          &kp J  &kp K            &kp L                 &lt 4 ENTER
-&mt LEFT_SHIFT Z           &mt LEFT_ALT X  &kp C  &kp V  &kp B                                     &kp N          &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
-&mt LS(LA(LG(LCTRL))) ESC                                &kp LEFT_COMMAND  &lt 3 TAB  &lt 2 SPACE  &kp LC(SPACE)  &none  &kp LANG2        &kp LANG1             &kp BACKSPACE
-            >;
-        };
-
-        windows_layer {
-            label = "WIN";
-            bindings = <
-&lt 6 Q           &kp W           &kp E  &kp R  &kp T                                     &kp Y          &kp U  &kp I            &kp O                 &kp P
-&kp A             &kp S           &kp D  &kp F  &kp G                                     &kp H          &kp J  &kp K            &kp L                 &lt 4 ENTER
-&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &kp C  &kp V  &kp B                                     &kp N          &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
-&mt LCTRL ESC                                   &kp LEFT_COMMAND  &lt 3 TAB  &lt 2 SPACE  &kp BACKSPACE  &none  &kp LANG2        &kp LANG1             &kp BACKSPACE
+&lt 6 Q                    &kp W           &kp E  &kp R  &kp T                                   &kp Y            &kp U  &kp I            &kp O                 &kp P
+&kp A                      &kp S           &kp D  &kp F  &kp G                                   &kp H            &kp J  &kp K            &kp L                 &lt 4 ENTER
+&mt LEFT_SHIFT Z           &mt LEFT_ALT X  &kp C  &kp V  &kp B                                   &kp N            &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
+&mt LS(LA(LG(LCTRL))) ESC                                &kp LEFT_COMMAND  &lt 2 TAB  &kp SPACE  &lt 1 LC(SPACE)  &none  &kp LANG2        &kp LANG1             &kp BACKSPACE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&kp KP_NUMBER_1        &kp KP_NUMBER_2         &kp KP_NUMBER_3  &kp KP_NUMBER_4   &kp KP_NUMBER_5                    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&caps_word             &msc MOVE_X(-15)        &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(15)                    &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp LA(GRAVE)
-&kp LSHIFT             &mt LEFT_ALT LC(PG_UP)  &kp LC(PG_DN)    &mkp MB4          &mkp MB5                           &kp HOME         &kp PG_DN        &kp PG_UP        &kp END          &kp LC(F10)
-&kp LS(LA(LG(LCTRL)))                                                             &kp LEFT_GUI     &lt 4 TAB  &none  &trans           &none            &trans           &trans           &kp DELETE
+&kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp KP_NUMBER_4   &kp KP_NUMBER_5                     &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
+&trans           &kp LC(LS(TAB))   &kp LC(TAB)      &mkp MB4          &mkp MB5                            &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp LA(GRAVE)
+&kp LSHIFT       &msc MOVE_X(-15)  &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(15)                     &kp HOME         &kp PG_DN        &kp PG_UP        &kp END          &kp LC(F10)
+&trans                                                                &trans           &lt 4 TAB  &trans  &trans           &trans           &trans           &trans           &kp DELETE
             >;
         };
 
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp EXCLAMATION        &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT                      &kp CARET             &kp AMPERSAND          &kp ASTERISK      &kp MINUS          &kp PLUS
-&kp QUESTION           &kp TILDE    &kp GRAVE  &kp DOUBLE_QUOTES  &kp SQT                          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON
-&kp SEMICOLON          &kp PIPE     &kp BSLH   &kp FSLH           &kp SLASH                        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN     &kp GREATER_THAN   &kp UNDERSCORE
-&kp LS(LA(LG(LCTRL)))                                             &kp TAB      &none  &lt 4 EQUAL  &trans                &none                  &trans            &trans             &kp DELETE
+&kp EXCLAMATION        &kp AT_SIGN  &kp HASH   &kp DOLLAR         &kp PERCENT                       &kp CARET             &kp AMPERSAND          &kp ASTERISK      &kp MINUS          &kp PLUS
+&kp QUESTION           &kp TILDE    &kp GRAVE  &kp DOUBLE_QUOTES  &kp SQT                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp COLON
+&kp SEMICOLON          &kp PIPE     &kp BSLH   &kp FSLH           &kp SLASH                         &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN     &kp GREATER_THAN   &kp UNDERSCORE
+&kp LS(LA(LG(LCTRL)))                                             &trans       &trans  &lt 4 EQUAL  &trans                &trans                 &trans            &trans             &kp DELETE
+            >;
+        };
+
+        windows_layer {
+            label = "WIN";
+            bindings = <
+&lt 6 Q           &kp W           &kp E  &kp R  &kp T                                   &kp Y            &kp U  &kp I            &kp O                 &kp P
+&kp A             &kp S           &kp D  &kp F  &kp G                                   &kp H            &kp J  &kp K            &kp L                 &lt 4 ENTER
+&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &kp C  &kp V  &kp B                                   &kp N            &kp M  &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
+&mt LCTRL ESC                                   &kp LEFT_COMMAND  &lt 2 TAB  &kp SPACE  &lt 4 LC(SPACE)  &none  &kp LANG2        &kp LANG1             &kp BACKSPACE
             >;
         };
 
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1                 &kp F2   &kp F3       &kp F4       &kp F5                       &kp F6      &kp F7      &kp F8      &kp F9       &kp F10
-&kp F11                &kp F12  &kp LC(F13)  &kp LA(F13)  &kp LC(LS(S))                &kp F7      &kp F10     &kp K_COPY  &kp K_PASTE  &none
-&kp F20                &kp F14  &kp F15      &kp F16      &kp F17                      &macbook_1  &macmini_2  &ipad_3     &windows_4   &bt BT_CLR
-&kp LS(LA(LG(LCTRL)))                                     &none          &none  &none  &none       &none       &none       &none        &none
+&kp F1                 &kp F2   &kp F3       &kp F4       &kp F5                         &kp F6      &kp F7      &kp F8      &kp F9       &kp F10
+&kp F11                &kp F12  &kp LC(F13)  &kp LA(F13)  &kp LC(LS(S))                  &kp CAPS    &caps_word  &kp K_COPY  &kp K_PASTE  &trans
+&kp F20                &kp F14  &kp F15      &kp F16      &kp F17                        &macbook_1  &macmini_2  &ipad_3     &windows_4   &bt BT_CLR
+&kp LS(LA(LG(LCTRL)))                                     &trans         &trans  &trans  &trans      &trans      &trans      &trans       &trans
             >;
         };
 
