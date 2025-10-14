@@ -34,48 +34,8 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - Ctl+$$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - LANG2
-  - LANG1
-  - {t: '$$mdi:backspace$$', type: backspace}
-  WIN:
-  - {t: Q, h: SCROLL}
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - {t: '$$mdi:keyboard-return$$', h: FUN}
-  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
-  - C
-  - V
-  - B
-  - N
-  - M
-  - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
-  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-space$$
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LANG2
   - LANG1
@@ -91,32 +51,32 @@ layers:
   - KP 8
   - KP 9
   - KP 0
-  - $$mdi:alpha-w-box$$
-  - '&msc MOVE_X(-15)'
-  - '&msc MOVE_Y(20)'
-  - '&msc MOVE_Y(-20)'
-  - '&msc MOVE_X(15)'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+Sft+$$mdi:keyboard-tab$$
+  - Ctl+$$mdi:keyboard-tab$$
+  - '&mkp MB4'
+  - '&mkp MB5'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: Alt+`, s: Alt+~}
   - $$mdi:apple-keyboard-shift$$
-  - {t: Ctl+PG UP, h: '$$mdi:apple-keyboard-option$$'}
-  - Ctl+PG DN
-  - '&mkp MB4'
-  - '&mkp MB5'
+  - '&msc MOVE_X(-15)'
+  - '&msc MOVE_Y(20)'
+  - '&msc MOVE_Y(-20)'
+  - '&msc MOVE_X(15)'
   - HOME
   - PG DN
   - PG UP
   - END
   - Ctl+F10
-  - Sft+Alt+Gui+$$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:keyboard-tab$$', h: FUN}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-tab$$', h: FUN}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
@@ -152,14 +112,54 @@ layers:
   - '>'
   - _
   - Sft+Alt+Gui+$$mdi:apple-keyboard-control$$
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '=', h: FUN, s: +}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
+  WIN:
+  - {t: Q, h: SCROLL}
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: '$$mdi:keyboard-return$$', h: FUN}
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: X, h: '$$mdi:apple-keyboard-option$$'}
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', h: '$$mdi:apple-keyboard-control$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '-', h: '$$mdi:apple-keyboard-shift$$', s: _}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
+  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:keyboard-tab$$', h: SYM}
+  - $$mdi:keyboard-space$$
+  - {t: 'Ctl+$$mdi:keyboard-space$$', h: FUN}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - LANG2
+  - LANG1
+  - {t: '$$mdi:backspace$$', type: backspace}
   FUN:
   - F1
   - F2
@@ -176,11 +176,11 @@ layers:
   - Ctl+F13
   - Alt+F13
   - Ctl+Sft+S
-  - F7
-  - F10
+  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:alpha-w-box$$
   - COPY
   - PASTE
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {type: held}
   - F20
   - F14
   - F15
@@ -192,14 +192,14 @@ layers:
   - '&windows_4'
   - $$mdi:bluetooth-off$$
   - Sft+Alt+Gui+$$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
+  - {type: held alternate}
+  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
   - '&mkp MB1'
   - '&mkp MB1'
@@ -322,20 +322,13 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [30, 38]
-  k: {t: NONE, h: toggle}
+  k: {t: MAC, h: toggle}
   l: [MAC]
 - p: [30, 38]
   k: {t: MAC, h: toggle}
-  l: [NONE]
-- p: [0, 9]
-  k: {t: MAC, h: toggle}
-  l: [MAC]
-- p: [0, 9]
-  k: {t: MAC, h: toggle}
-  l: [NONE]
 - p: [0, 1]
   k: $$mdi:mouse-left-click-outline$$
-- p: [20, 21]
+- p: [10, 11]
   k: $$mdi:mouse-right-click-outline$$
 - p: [6, 7]
   k: F10
