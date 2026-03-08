@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball39}
 layers:
   MAC:
-  - {t: Q, h: SCROLL}
+  - {t: Q, h: MOUSE}
   - W
   - E
   - R
@@ -34,14 +34,14 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: 'Sft+Alt+Gui+$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - Ctl+$$mdi:keyboard-space$$
   - LANG2
   - LANG1
   - {t: '$$mdi:backspace$$', type: backspace}
   WIN:
-  - {t: Q, h: SCROLL}
+  - {t: Q, h: MOUSE}
   - W
   - E
   - R
@@ -74,7 +74,7 @@ layers:
   - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:keyboard-tab$$', h: SYM}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - Ctl+$$mdi:keyboard-space$$
   - LANG2
@@ -100,7 +100,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: Alt+`, s: Alt+~}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - '&msc MOVE_X(-15)'
   - '&msc MOVE_Y(20)'
@@ -201,30 +201,30 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
+  - {type: held}
+  - '&msc MOVE_X(-15)'
+  - '&msc MOVE_Y(20)'
+  - '&msc MOVE_Y(-20)'
+  - '&msc MOVE_X(15)'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB1'
-  - '&mkp MB1'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB3'
-  - '&mkp MB3'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mkp MB2'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - '&mkp MB2'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -241,7 +241,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SCROLL:
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
   - $$mdi:pan-up$$
   - $$mdi:pan-down$$
