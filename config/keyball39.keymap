@@ -135,20 +135,20 @@
         mac_layer {
             label = "MAC";
             bindings = <
-&lt 6 Q                    &kp W           &kp E  &kp R  &kp T                               &kp Y        &kp U          &kp I            &kp O                 &kp P
-&kp A                      &kp S           &kp D  &kp F  &kp G                               &kp H        &kp J          &kp K            &kp L                 &lt 4 ENTER
-&mt LEFT_SHIFT Z           &mt LEFT_ALT X  &kp C  &kp V  &kp B                               &kp N        &kp M          &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
-&mt LS(LA(LG(LCTRL))) ESC                                &kp LEFT_COMMAND  &lt 3 TAB  &none  &lt 2 SPACE  &kp LC(SPACE)  &kp LANG2        &kp LANG1             &kp BACKSPACE
+&lt 5 Q                    &kp W           &kp E  &kp R  &kp T                                   &kp Y        &kp U          &kp I            &kp O                 &kp P
+&kp A                      &kp S           &kp D  &kp F  &kp G                                   &kp H        &kp J          &kp K            &kp L                 &lt 4 ENTER
+&mt LEFT_SHIFT Z           &mt LEFT_ALT X  &kp C  &kp V  &kp B                                   &kp N        &kp M          &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
+&mt LS(LA(LG(LCTRL))) ESC                                &kp LEFT_COMMAND  &lt 3 TAB  &kp SPACE  &lt 2 SPACE  &kp LC(SPACE)  &kp LANG2        &kp LANG1             &kp BACKSPACE
             >;
         };
 
         windows_layer {
             label = "WIN";
             bindings = <
-&lt 6 Q           &kp W           &kp E  &kp R  &kp T                               &kp Y        &kp U          &kp I            &kp O                 &kp P
-&kp A             &kp S           &kp D  &kp F  &kp G                               &kp H        &kp J          &kp K            &kp L                 &lt 4 ENTER
-&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &kp C  &kp V  &kp B                               &kp N        &kp M          &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
-&mt LCTRL ESC                                   &kp LEFT_COMMAND  &lt 3 TAB  &none  &lt 4 SPACE  &kp LC(SPACE)  &kp LANG2        &kp LANG1             &kp BACKSPACE
+&lt 5 Q           &kp W           &kp E  &kp R  &kp T                                   &kp Y        &kp U          &kp I            &kp O                 &kp P
+&kp A             &kp S           &kp D  &kp F  &kp G                                   &kp H        &kp J          &kp K            &kp L                 &lt 4 ENTER
+&mt LEFT_SHIFT Z  &mt LEFT_ALT X  &kp C  &kp V  &kp B                                   &kp N        &kp M          &mt RCTRL COMMA  &mt RIGHT_ALT PERIOD  &mt RSHIFT MINUS
+&mt LCTRL ESC                                   &kp LEFT_COMMAND  &lt 3 TAB  &kp SPACE  &lt 4 SPACE  &kp LC(SPACE)  &kp LANG2        &kp LANG1             &kp BACKSPACE
             >;
         };
 
@@ -156,7 +156,7 @@
             label = "NUM";
             bindings = <
 &kp KP_NUMBER_1  &kp KP_NUMBER_2   &kp KP_NUMBER_3  &kp KP_NUMBER_4   &kp KP_NUMBER_5                     &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&trans           &kp LC(LS(TAB))   &kp LC(TAB)      &mkp MB4          &mkp MB5                            &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp LA(GRAVE)
+&trans           &kp LC(LS(TAB))   &kp LC(TAB)      &mkp MB4          &mkp MB5                            &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &trans
 &kp LSHIFT       &msc MOVE_X(-15)  &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(15)                     &kp HOME         &kp PG_DN        &kp PG_UP        &kp END          &kp LC(F10)
 &trans                                                                &trans           &lt 4 TAB  &trans  &trans           &trans           &trans           &trans           &kp DELETE
             >;
@@ -185,10 +185,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&mkp MB1  &mkp MB1  &none  &none  &none                   &none   &none   &none   &none   &none
-&mkp MB3  &mkp MB3  &none  &none  &none                   &none   &none   &none   &none   &none
-&mkp MB2  &mkp MB2  &none  &none  &none                   &none   &none   &none   &none   &none
-&none                             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &none
+&trans  &msc MOVE_X(-15)  &msc MOVE_Y(20)  &msc MOVE_Y(-20)  &msc MOVE_X(15)                  &none   &none   &none   &none   &none
+&trans  &mkp MB1          &mmv MOVE_UP     &mkp MB2          &none                            &none   &none   &none   &none   &none
+&trans  &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT   &none                            &none   &none   &none   &none   &none
+&none                                                        &trans           &trans  &trans  &trans  &trans  &trans  &trans  &none
             >;
         };
 
